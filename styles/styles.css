@@ -87,6 +87,7 @@ aside {                 /* Added during W02 */
     background-color: #eee;
     color: #333;     */ /* Removed during W03 */
     text-align: center;
+    position: relative;
 }
 
 aside h2 {
