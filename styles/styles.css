@@ -98,13 +98,13 @@ aside h2 {
 }
 
 aside img {
-    width 200px;
+    width: 200px;
     height: auto;
 }
 
 main img {
     float: right;
-    width 150px;
+    width: 150px;
     height: auto;
 }
 
