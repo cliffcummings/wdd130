@@ -74,6 +74,7 @@ cite {
 
 .hero img {
     position: relative;
+    float: right;
     margin: 0 0 10px 15px;
     border: 1px solid var(--back_color1);
     padding: 3px;
