@@ -84,7 +84,7 @@ cite {
 }
 
 .logo img {
-    position: absolutely;
+    position: relative;
     margin: 0 0 10px 15px;
     border: 0;
     padding: 3px;
@@ -94,7 +94,7 @@ cite {
 }
 
 .sociallinks {
-    position: absolutely;
+    position: relative;
     margin: 0 0 0 0;
     border: 2px;
     padding: 3px;
