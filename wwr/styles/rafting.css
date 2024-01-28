@@ -27,6 +27,10 @@ h1 {
     color: steelblue;
 }
 
+h2 {
+    font-family: Roboto, Arial, sans-serif;
+}
+
 nav {
     /* background-color: steelblue; */
     background-color: var(--back_color3);
@@ -79,7 +83,7 @@ cite {
 }
 
 .logo img {
-    position: relative;
+    position: absolutely;
     margin: 0 0 10px 15px;
     border: 0;
     padding: 3px;
@@ -89,7 +93,7 @@ cite {
 }
 
 .sociallinks {
-    position: relative;
+    position: absolutely;
     margin: 0 0 0 0;
     border: 2px;
     padding: 3px;
