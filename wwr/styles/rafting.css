@@ -24,6 +24,7 @@ footer {
 
 h1 {
     font-family: 'Rock Salt', 'Bradley Hand', cursive;
+    color: steelblue;
 }
 
 nav {
@@ -39,16 +40,12 @@ nav a {
     padding: 20px;
 }
 
-h1 {
-    color: steelblue;
-}
-
 img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--back_color2);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--back_color3);
 }
 
 p {
@@ -74,9 +71,9 @@ cite {
 .hero img {
     position: relative;
     margin: 0 0 10px 15px;
-    border: 1px solid #000;
+    border: 1px solid var(--back_color1);
     padding: 3px;
-    background-color: #bbb;
+    background-color: var(--accent_color1);
     width: 100%;
     height: auto;
 }
@@ -105,7 +102,7 @@ cite {
     width: 400px;
     height: auto;
     margin: 10px;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid var(--accent_color1));
     padding: 15px;
     background-color: #247;
     color: #fff;
@@ -114,9 +111,9 @@ cite {
 .callout img {
     float: right;
     margin: 0 0 10px 15px;
-    border: 1px solid #000;
+    border: 1px solid var(--back_color1);
     padding: 3px;
-    background-color: #bbb;
+    background-color: var(--back_color2);
     width: 100px;
     height: auto;
 }
