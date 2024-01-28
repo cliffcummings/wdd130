@@ -1,3 +1,6 @@
+/*-------------------------------------------------*/
+/* Universal Selector                              */
+/*-------------------------------------------------*/
 
 * {
     margin: 0;
@@ -24,40 +27,8 @@ h1 {
     color: steelblue;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-
 p {
-    padding: 0;
-}
-
-.callout {
-    width: 400px;
-    height: auto;
-    margin: 10px;
-    border: 1px solid rgba(0, 0, 0, .1);
-    padding: 15px;
-    background-color: #247;
-    color: #fff;
-}
-
-.callout img {
-    float: right;
-    margin: 0 0 10px 15px;
-    border: 1px solid #000;
-    padding: 3px;
-    background-color: #bbb;
-    width: 100px;
-    height: auto;
-}
-
-blockquote {
-	margin: 0;
+    padding: 1rem;
 }
 
 cite {
@@ -72,10 +43,14 @@ main {
     max-width: 840px;
 }
 
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 aside {                 /* Added during W02 */
@@ -92,21 +67,36 @@ aside {                 /* Added during W02 */
 
 aside h2 {
     position: absolute;
-    top: 47px;
-    left: 150px;
+    top: 20px;
+    left: 0px;
     width: 20em;
     text-align: center;
 }
 
 aside img {
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 
-main img {
-    float: right;
-    width: 150px;
-    height: auto;
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+blockquote {
+	margin: 0;
+}
+
+/*-------------------------------------------------*/
+/* Class Selectors                                 */
+/*-------------------------------------------------*/
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
 
 .callout {
@@ -127,26 +117,4 @@ main img {
     background-color: #bbb;
     width: 100px;
     height: auto;
-}
-
-blockquote {
-	margin: 0;
-}
-
-cite {
-	display: block;
-    border-top: 1px dotted #fff;
-    padding-top: 3px;
-    text-align: right;
-    font-size: smaller;
-}
-
-/* Class Selectors */
-
-.box {
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, .1);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
 }

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+:root {
+    --back_color1: #0D1B2A;
+    --back_color2: #1D5599;
+    --back_color3: #57849C;
+    --accent_color1: #7FC6DE;
+    --accent_color2: #EFEFEF;
+    --wild_red: #FF0000;
+}
+
+body {
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    background-color: var(--accent_color2);
+    border-bottom: 1px solid var(--back_color2);
+    text-decoration: var(--back_color2);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Rock Salt', 'Bradley Hand', cursive;
+}
+
+nav {
+    /* background-color: steelblue; */
+    background-color: var(--back_color3);
+    padding: 10px;
+}
+
+nav a {
+    /*color: white;*/
+    color: var(--accent_color2);
+    display: block;
+    padding: 20px;
+}
+
+h1 {
+    color: steelblue;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+p {
+    padding: 10px;
+}
+
+blockquote {
+	margin: 0;
+}
+
+cite {
+	display: block;
+    border-top: 1px dotted #fff;
+    padding-top: 3px;
+    text-align: right;
+    font-size: smaller;
+}
+
+/*-------------------------------------------------*/
+/* Class Selectors                                 */
+/*-------------------------------------------------*/
+
+.hero img {
+    position: relative;
+    margin: 0 0 10px 15px;
+    border: 1px solid #000;
+    padding: 3px;
+    background-color: #bbb;
+    width: 100%;
+    height: auto;
+}
+
+.logo img {
+    position: relative;
+    margin: 0 0 10px 15px;
+    border: 0;
+    padding: 3px;
+    background-color: var(--back_color3);
+    width: 30px;
+    height: auto;
+}
+
+.sociallinks {
+    position: relative;
+    margin: 0 0 0 0;
+    border: 2px;
+    padding: 3px;
+    background-color: var(--back_color3);
+    width: 50%;
+    height: auto;
+}
+
+.callout {
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 15px;
+    background-color: #247;
+    color: #fff;
+}
+
+.callout img {
+    float: right;
+    margin: 0 0 10px 15px;
+    border: 1px solid #000;
+    padding: 3px;
+    background-color: #bbb;
+    width: 100px;
+    height: auto;
+}
+
+/* Code found on https://blog.hubspot.com/website/remove-underline-from-links-css */
+a:link { 
+    text-decoration: none; 
+  } 
+  a:visited { 
+    text-decoration: none; 
+  } 
+  a:hover { 
+    text-decoration: underline; 
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
+  
