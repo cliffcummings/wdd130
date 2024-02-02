@@ -11,20 +11,27 @@
 
 body {
     font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    width: 800px;
+    margin: 0 auto;
 }
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--back_color1);
     background-color: var(--accent_color2);
     border-bottom: 1px solid var(--back_color2);
-    text-decoration: var(--back_color2);
     text-align: center;
 }
 
 h1 {
     font-family: 'Rock Salt', 'Bradley Hand', cursive;
-    color: steelblue;
+    color: var(--accent_color2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
 }
 
 h2 {
@@ -44,41 +51,19 @@ nav a {
     padding: 20px;
 }
 
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid var(--back_color2);
-    padding: 2px;
-    box-shadow: 0 0 30px var(--back_color3);
-}
-
 p {
     padding: 10px;
-}
-
-blockquote {
-	margin: 0;
-}
-
-cite {
-	display: block;
-    border-top: 1px dotted #fff;
-    padding-top: 3px;
-    text-align: right;
-    font-size: smaller;
 }
 
 /*-------------------------------------------------*/
 /* Class Selectors                                 */
 /*-------------------------------------------------*/
 
-.hero img {
+.hero {
     position: relative;
-    float: right;
-    margin: 0 0 10px 15px;
-    border: 1px solid var(--back_color1);
-    padding: 3px;
-    background-color: var(--accent_color1);
+}
+
+.hero img {
     width: 100%;
     height: auto;
 }
@@ -88,7 +73,6 @@ cite {
     margin: 0 0 10px 15px;
     border: 0;
     padding: 3px;
-    background-color: var(--back_color3);
     width: 30px;
     height: auto;
 }
@@ -98,19 +82,25 @@ cite {
     margin: 0 0 0 0;
     border: 2px;
     padding: 3px;
-    background-color: var(--back_color3);
     width: 50%;
     height: auto;
 }
 
+.sociallinks img {
+    width: 50px;
+}
+
 .callout {
-    width: 400px;
+    width: 80%;
     height: auto;
-    margin: 10px;
-    border: 1px solid var(--accent_color1);
     padding: 15px;
-    background-color: #247;
-    color: #fff;
+    background-color: var(--back_color1);
+    color: var(--accent_color2);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .callout img {
@@ -122,6 +112,15 @@ cite {
     width: 100px;
     height: auto;
 }
+
+.adventure img {
+    width: 150px;
+    height: auto;
+    border: 1px solid var(--back_color2);
+    padding: 2px;
+    box-shadow: 0 0 30px var(--back_color3);
+}
+*/
 
 /* Code found on https://blog.hubspot.com/website/remove-underline-from-links-css */
 a:link { 
