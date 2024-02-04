@@ -9,7 +9,6 @@
     --wild_red: #FF0000;
 }
 
-/* W04 Tutorial by Kim Daley - two columns: image and nav */
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -18,7 +17,6 @@ header {
 
 body {
     font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
-    /* Updates per Kim Daley */
     width: 800px;
     margin: 0 auto;
 }
@@ -29,7 +27,6 @@ footer {
     background-color: var(--accent_color2);
     border-bottom: 1px solid var(--back_color2);
     text-align: center;
-    /* W04 - Tutorial by Kim Daley */
     display: grid ;
     grid-template-columns: 3fr 1fr;
 }
@@ -37,7 +34,6 @@ footer {
 h1 {
     font-family: 'Rock Salt', 'Bradley Hand', cursive;
     color: var(--accent_color2);
-    /* per Kim Daley - fixed for inline center */
     position: absolute;
     top: 0;
     left: 0;
@@ -54,7 +50,6 @@ nav {
     /* background-color: steelblue; */
     background-color: var(--back_color3);
     padding: 10px;
-    /* W04 - Tutorial by Kim Daley */
     display: flex;
 }
 
@@ -64,16 +59,6 @@ nav a {
     display: block;
     padding: 20px;
 }
-
-/* Remove - per Kim Daley - added to classes .adventure
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid var(--back_color2);
-    padding: 2px;
-    box-shadow: 0 0 30px var(--back_color3);
-}
-*/
 
 p {
     padding: 10px;
@@ -88,19 +73,12 @@ figure {
 /*-------------------------------------------------*/
 /* Class Selectors                                 */
 /*-------------------------------------------------*/
-/* Added per Kim Daley */
+
 .hero {
     position: relative;
 }
 
 .hero img {
-    /* removed multiple pieces 
-    float
-    border
-    background-color
-    - per Kim Daley */
-    /* margin: 0 0 10px 15px; Per Kim Daley */
-    /* padding: 3px; Per Kim Daley */
     width: 100%;
     height: auto;
 }
@@ -110,47 +88,43 @@ figure {
     margin: 0 0 10px 15px;
     border: 0;
     padding: 3px;
-    /* Odd background color - Kim Daley 
-    background-color: var(--back_color3); */
+    /* Odd background color - Kim Daley */
+    /* background-color: transparent; */
     width: 30px;
     height: auto;
 }
 
 .sociallinks {
     position: relative;
-    margin: 0 0 0 0;
     border: 2px;
-    padding: 3px;
-    /* Odd background color - Kim Daley 
-    background-color: var(--back_color3); */
+    padding: 13px;
     width: 50%;
     height: auto;
+    background-color: var(--accent_color2);
 }
 
-/* Added by Kim Daley to change size of social links in footer */
+/* sociallinks-img class to control size of social links images in footer */
 .sociallinks img {
     width: 50px;
 }
 
+
 .callout {
-    /* width: 400px; */
-    width: 80%;    /* modified width per Kim Daley */
+    width: 80%;
     height: auto;
-    /* Per Kim Daley
-    margin: 10px;
-    border: 1px solid var(--accent_color1);
-    */
     padding: 15px;
-    background-color: var(--back_color1);
     color: var(--accent_color2);
+    background-color: var(--back_color2);
+    /* To position inner box, use absolute */
     position: absolute;
-    /* Added by Kim Daley */
+    /* Callout location inside of large image */
     top: 100px;
     left: 0;
     right: 0;
     margin: 0 auto;
 }
 
+/* Image on right side of callout */
 .callout img {
     float: right;
     margin: 0 0 10px 15px;
@@ -161,7 +135,7 @@ figure {
     height: auto;
 }
 
-/* W04 - Kim Daley - added .adventure and added to classes .adventure img */
+/* adventure & adventure-img classs for Adventure Awaits <div> */
 .adventure {
     display: flex;
 }
@@ -176,16 +150,20 @@ figure {
 */
 
 /* Code found on https://blog.hubspot.com/website/remove-underline-from-links-css */
-a:link { 
+a:link {
+    text-decoration: none;
+} 
+
+a:visited {
     text-decoration: none; 
-  } 
-  a:visited { 
+} 
+
+a:hover {
+    color: var(--back_color1); 
     text-decoration: none; 
-  } 
-  a:hover { 
-    text-decoration: underline; 
-  } 
-  a:active { 
+} 
+
+a:active { 
     text-decoration: none; 
-  }
+}
   
