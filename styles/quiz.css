@@ -78,7 +78,7 @@ input, select, textarea {
     font-size: 1.1rem;
 }
 
-button {
+.button {
     display: block;
     margin: auto;
     background-color: navy;
@@ -90,7 +90,7 @@ button {
     width: 25%;
 }
 
-button:hover {
+.button:hover {
     background-color: darkgreen;
 }
 
