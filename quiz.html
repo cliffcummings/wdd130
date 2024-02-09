@@ -6,12 +6,9 @@
     <meta name="description" content="WDD 130 Quiz Page for Cliff Cummings" >
     <meta name="author" content="Cliff Cummings" >
     <link rel="stylesheet" href="styles/quiz.css">
-    <title>Cliff Cummings | WDD 130</title>
+    <title>Cliff Cummings | WDD 130 | QUIZ Assignment</title>
 </head>
-<body>
-    
-</body>
-</html>
+
 
 <!--
     Your HTML document should be valid and contain an <h1> heading that is appropriate for the content.
@@ -35,3 +32,49 @@ The following form input elements and settings are required in the quiz:
 
 The form requires a button of type submit with the text "Submit Quiz".
 -->
+
+  <body>
+    <header>
+        <h1>WDD 130 HTML & CSS Short Quiz</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>WDD 130 Quiz Questions</legend>
+                <div class="form-item column1">
+                    <label for="q1">What is the name of the default HTML file in a directory?</label>
+                    <input type="text" id="q1" name="q1">
+                </div>
+
+                <label class="center-it" for="q2">Complete the following .grid class to display a grid and create three equally sized columns in the grid</label>
+                <textarea id="q2" name="q2" rows="4" placeholder=".grid {"></textarea>
+
+
+            <div class="form-item column1">
+                <label for="q3">Which is valid CSS syntax for the universal selector?</label>
+                <select class="option" name="q3" id="browser">
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="choice1">.universal { ... }</option>
+                    <option value="choice2">There is no universal selector</option>
+                    <option value="choice3">* { ... }</option>
+                    <option value="choice4">h1 { ... }</option>
+                    <option value="choice5">universal { ... }</option>
+                </select>
+            </div>
+        </fieldset>
+
+            <div>
+                <button>
+                    <input type="submit" value="Submit Quiz">
+                </button>
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy;2024 | HTML & CSS Quiz | Cliff Cummings</p>
+    </footer>
+          
+  </body>
+</html>
