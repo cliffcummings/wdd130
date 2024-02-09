@@ -15,7 +15,7 @@ body {
 main {
 	max-width: 600px;
 	margin: 2px auto;
-    padding: 4px auto;
+    padding: 4px;
     border: 6px;
 	font-family: Roboto, Arial, sans-serif;
 }
