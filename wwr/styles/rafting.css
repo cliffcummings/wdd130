@@ -132,6 +132,15 @@ figure {
 /* Class Selectors                                 */
 /*-------------------------------------------------*/
 
+
+.h1header {
+    position: absolute;
+    margin: 0 0 10px 15px;
+    padding: 3px;
+
+}
+
+
 .hero {
     position: relative;
 }
