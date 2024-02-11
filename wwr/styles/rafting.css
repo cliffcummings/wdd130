@@ -208,12 +208,6 @@ figure {
     box-shadow: 0 0 30px var(--back_color3);
 }
 
-.map {
-    style="border:0;"
-}
-
-
-
 .form-item {
     display: grid;
     align-items: center;
