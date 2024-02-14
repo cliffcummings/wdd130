@@ -101,7 +101,14 @@ textarea {
 button {
     margin: auto;
     display: block;
-  }
+    color: #fff;
+    background-color: navy;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    width: 35%;
+}
 
 
 nav {
@@ -133,11 +140,11 @@ figure {
 /*-------------------------------------------------*/
 
 
-.h1header {
-    position: absolute;
-    margin: 0 0 10px 15px;
-    padding: 3px;
-
+.contact h1 {
+    position: inherit;
+    color: var(--back_color3);
+    /*margin: 0 0 10px 15px;
+    padding: 3px;*/
 }
 
 
@@ -220,17 +227,6 @@ figure {
 .form-item {
     display: grid;
     align-items: center;
-}
-
-.button {
-    margin: auto;
-    color: #fff;
-    background-color: navy;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.75rem;
-    font-size: 1.2rem;
-    width: 35%;
 }
 
 .column1 {
