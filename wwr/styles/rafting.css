@@ -29,6 +29,11 @@ footer {
     text-align: center;
     display: grid ;
     grid-template-columns: 3fr 1fr;
+    margin-top: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
 }
 
 h1 {
@@ -61,7 +66,7 @@ form {
     background-color: lightgray;
     width: 700px;
     margin: 0 auto;
-    padding: 0.5rem;
+    padding: 1.5rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
     display: grid;
@@ -123,6 +128,7 @@ nav a {
     color: var(--accent_color2);
     display: block;
     padding: 20px;
+    padding-bottom: 0;
 }
 
 p {
@@ -171,7 +177,8 @@ figure {
 .sociallinks {
     position: relative;
     border: 2px;
-    padding: 13px;
+    padding-top: 3px;
+    padding-bottom: 0;
     width: 50%;
     height: auto;
     background-color: var(--accent_color2);
