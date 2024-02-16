@@ -17,7 +17,7 @@ header {
 
 body {
     font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
-    width: 800px;
+    width: 700px;
     margin: 0 auto;
 }
 
@@ -135,16 +135,73 @@ p {
     padding: 1px;
 }
 
-/* W04 - Tutorial by Kim Daley */
 figure {
     padding: 0;
     margin: 0;
 }
 
+figcaption {
+    text-align: center;
+}
+
+main img {
+    width: 300px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+div img {
+    width: 200px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+
 /*-------------------------------------------------*/
 /* Class Selectors                                 */
 /*-------------------------------------------------*/
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px;
+    width: 700px;
+}
+
+.grid-item {
+    background-color: #1D5599;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.grid-text1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: justify;
+}
+
+/*
+.grid-photo1 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+*/
+
+.grid-text2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: justify;
+}
 
 .contact h1 {
     position: inherit;
@@ -152,7 +209,6 @@ figure {
     /*margin: 0 0 10px 15px;
     padding: 3px;*/
 }
-
 
 .hero {
     position: relative;
@@ -239,6 +295,42 @@ figure {
 .column1 {
     grid-template-columns: 20% 60%;
     margin: .5rem 0;
+}
+
+/*
+.raft1txt {
+    grid-column: 1 / 4;
+    grid-template-columns: 4;
+    grid-row: 1;
+  }
+
+.raft1 {
+    grid-column: 4 / 4;
+    grid-row: 1;
+ }
+
+.raft2 {
+  grid-column: 1 / 4;
+  grid-row: 2;
+}
+
+.raft3 {
+  grid-column: 4 / 4;
+  grid-row: 3;
+}
+*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(50px, auto);
+  }
+
+  
+/* sociallinks-img class to control size of social links images in footer */
+.social.wrapper img {
+    width: 10px;
 }
 
 /* Code found on https://blog.hubspot.com/website/remove-underline-from-links-css */

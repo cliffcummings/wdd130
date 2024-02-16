@@ -21,97 +21,62 @@
         </nav>
     </header>
 
+    <!-- -------------- Common Header Above This Line -------------------------- -->
+
     <main class="contact">
         <h1>WDD 130 - Trips Page</h1>
 
-        <section> <!-- History Section -->
+        <button type="submit" name="IB" value="IB">Request More Information Here!</button><br>
+
+        <section> <!-- Rafting Trips Section -->
             <h2>
-                Company Information
+                Available High Adventure Rafting Trips
             </h2>
-            <h4>
-                Address: 3702 E Provo Canyon Rd, Provo, UT 84604
-            </h4>
-            <h4>
-                Phone Numbers:
-            </h4>
-            <p>1-800-rafting
-            <br>1-800-723-8464</p>
-            <h4>
-                email: info@wwr-rafting.com
-            </h4>
-            <h4>
-                Location
-            </h4>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24319.367528480474!2d-111.56963386784619!3d40.36627732126586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d8e7642eb4b43%3A0x5dfdf778ea370abd!2s3702%20E%20Provo%20Canyon%20Rd%2C%20Provo%2C%20UT%2084604!5e0!3m2!1sen!2sus!4v1707609317141!5m2!1sen!2sus" width="700" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
         </section>
 
-        <section> <!-- Employees Section -->
-            <h2>
-                Employees
-            </h2>
+        <section class="wrapper"> <!-- Rafting Trips Section -->
             <!-- Added <div> to control multiple rafting images -->
             <!-- Rafting jpg files from website: https://byui-cse.github.io/wdd130-ww-course/resources/wwr-image-repo.html  -->
-            <div class="team">
-                <figure>
-                    <img src="images/ceo-image.png" alt="Rafting Image #1">
-                    <figcaption>John Waters<br>CEO
-
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/chief-rafting-officer.png" alt="Rafting Image #3">
-                    <figcaption>Swifty Rivers<br>Chief Rafting Officer
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/vp-tours.png" alt="Rafting Image #5">
-                    <figcaption>Jenny Rapids<br>VP of Tours</figcaption>
-                </figure>
-                
+            <div class="grid-container">
+                <div class="grid-item grid-text1">
+                        <p>The Lazy River trip is for individuals and families who would like to enjoy a river outing with mild rapids ...
+                        </p>
+                        <p>Bring your family or your posse for a great time on the river.</p>
+                        <p>It is called the Lazy River trip but you still plan to get wet.</p>
+                </div>
+                <!-- <div class="grid-item">1</div> -->
+                <div class="grid-item">
+                    <figure>
+                        <img src="images/rafting49_600_400.png" alt="Easy Rafting Image #1">
+                        <figcaption>The Lazy River</figcaption>
+                    </figure>
+                </div>
+                <div class="grid-item">
+                    <figure>
+                        <img src="images/rafting17_600.jpg" alt="Adventure Rafting Image #2">
+                        <figcaption>White Water Adventure</figcaption>
+                    </figure>
+                </div>
+                <div class="grid-item grid-text2">
+                    Faster water
+                </div>
+                <!-- <div class="grid-item">2</div> -->
+                <!-- <div class="grid-item">3</div> -->
+                <div class="grid-item grid-text1">Death Trap</div>
+                <!-- <div class="grid-item">5</div> -->
+                <div class="grid-item">
+                    <figure>
+                        <img src="images/rafting19_600.jpg" alt="Extreme Splash Image #3">
+                        <figcaption>Extreme Splash Challenge</figcaption>
+                    </figure>
+                </div>
+                                
             </div>
         </section>
 
-        <form>
-            <fieldset>
-                <legend>Contact Us</legend>
-                <div class="form-item column1">
-                    <label for="name">Name </label>
-                    <input type="text" id="name" name="name">
-                </div>
-
-                <div class="form-item column1">
-                    <label for="email">Email: </label>
-                    <input type="text" id="email" name="email">
-                </div>
-
-                <div class="column1">
-                    <h4>Message Purpose</h4>
-                    <input type="radio" id="inquiry"     name="reason" value="GI">
-                    <label for="inquiry">General Inquiry</label><br>
-                    <input type="radio" id="reservation" name="reason" value="RQ">
-                    <label for="reservation">Reservation Question</label><br>
-                    <input type="radio" id="suggest"     name="reason" value="WS">
-                    <label for="suggest">Website Suggestion</label><br>
-                </div>
-
-                <div class="column1">
-                    <label for="msg">Message</label>
-                    <textarea id="msg" name="msg" rows="4"></textarea>
-                </div>
-                                
-                <div class="column1">
-                    <input type="checkbox" id="subscribe" name="subscr" value="subscr">
-                    <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>                  
-                </div>
-                
-                <button type="submit" name="IB" value="IB">Submit Your Message</button><br>
-            </fieldset>
-
-
-        </form>
     </main>
+
+    <!-- -------------- Common Footer Below This Line -------------------------- -->
 
     <!-- Social Media png files from website: https://icons8.com/icons/set/social-media -->
     <!-- Footer images controlled by "sociallinks" classes / Do not need text for images -->
@@ -130,7 +95,7 @@
                 <img src="images/instagram.png" alt="Instagram">
             </a>
         </nav>
-        <a href="images/wireframe1.png">Wireframe link</a>
+        <a href="images/wireframe_trips.png">Wireframe link</a>
 
         <br>
     </footer>
