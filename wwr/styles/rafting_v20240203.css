@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+:root {
+    --back_color1: #0D1B2A;
+    --back_color2: #1D5599;
+    --back_color3: #57849C;
+    --accent_color1: #7FC6DE;
+    --accent_color2: #EFEFEF;
+    --wild_red: #FF0000;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--back_color3);
+}
+
+body {
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid var(--back_color1);
+    background-color: var(--accent_color2);
+    border-bottom: 1px solid var(--back_color2);
+    text-align: center;
+    display: grid ;
+    grid-template-columns: 3fr 1fr;
+}
+
+h1 {
+    font-family: 'Rock Salt', 'Bradley Hand', cursive;
+    color: var(--accent_color2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+nav {
+    /* background-color: steelblue; */
+    background-color: var(--back_color3);
+    padding: 10px;
+    display: flex;
+}
+
+nav a {
+    /*color: white;*/
+    color: var(--accent_color2);
+    display: block;
+    padding: 20px;
+}
+
+p {
+    padding: 10px;
+}
+
+/* W04 - Tutorial by Kim Daley */
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+/*-------------------------------------------------*/
+/* Class Selectors                                 */
+/*-------------------------------------------------*/
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.logo img {
+    position: relative;
+    margin: 0 0 10px 15px;
+    border: 0;
+    padding: 3px;
+    /* Odd background color - Kim Daley */
+    /* background-color: transparent; */
+    width: 30px;
+    height: auto;
+}
+
+.sociallinks {
+    position: relative;
+    border: 2px;
+    padding: 13px;
+    width: 50%;
+    height: auto;
+    background-color: var(--accent_color2);
+}
+
+/* sociallinks-img class to control size of social links images in footer */
+.sociallinks img {
+    width: 50px;
+}
+
+
+.callout {
+    width: 80%;
+    height: auto;
+    padding: 15px;
+    color: var(--accent_color2);
+    background-color: var(--back_color2);
+    /* To position inner box, use absolute */
+    position: absolute;
+    /* Callout location inside of large image */
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+/* Image on right side of callout */
+.callout img {
+    float: right;
+    margin: 0 0 10px 15px;
+    border: 1px solid var(--back_color1);
+    padding: 3px;
+    background-color: var(--back_color2);
+    width: 100px;
+    height: auto;
+}
+
+/* adventure & adventure-img classs for Adventure Awaits <div> */
+.adventure {
+    display: flex;
+}
+
+.adventure img {
+    width: 150px;
+    height: auto;
+    border: 1px solid var(--back_color2);
+    padding: 2px;
+    box-shadow: 0 0 30px var(--back_color3);
+}
+
+/* Code found on https://blog.hubspot.com/website/remove-underline-from-links-css */
+a:link {
+    text-decoration: none;
+} 
+
+a:visited {
+    text-decoration: none; 
+} 
+
+a:hover {
+    color: var(--back_color1); 
+    text-decoration: none; 
+} 
+
+a:active { 
+    text-decoration: none; 
+}
+  

@@ -17,19 +17,19 @@ header {
 
 body {
     font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
-    width: 800px;
+    width: 700px;
     margin: 0 auto;
 }
 
 footer {
-    display: grid ;
-    grid-template-columns: 3fr 1fr;
-    color: black;
-    background-color: var(--accent_color2);
     margin-top: 15px;
     border-top: 1px solid var(--back_color1);
-    border-bottom: 10px solid var(--back_color2);
+    background-color: var(--accent_color2);
+    border-bottom: 1px solid var(--back_color2);
     text-align: center;
+    display: grid ;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 2rem;
 }
 
 section {
@@ -63,21 +63,21 @@ h4 {
 }
 
 form {
-    display: grid;
     background-color: lightgray;
     width: 700px;
     margin: 0 auto;
     padding: 1.5rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
+    display: grid;
 }
 
 fieldset {
     display: grid;
     grid-gap: 0.5rem;
     margin: 1rem;
-    padding: 0.5rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
 }
 
 label {
@@ -103,7 +103,7 @@ textarea {
     height: 5em;
 }
 
-button, a.button {
+button {
     margin: auto;
     display: block;
     color: #fff;
@@ -113,40 +113,25 @@ button, a.button {
     padding: 0.75rem;
     font-size: 1.2rem;
     width: 35%;
-    text-align: center;
 }
 
-a.button:hover {
-    color: var(--back_color2);
-    background-color: var(--accent_color1);
-}
-
-button:hover {
-    color: var(--back_color2);
-    background-color: var(--accent_color1);
-}
 
 nav {
-    display: flex;
+    /* background-color: steelblue; */
     background-color: var(--back_color3);
-    padding-top: 10px;
+    padding: 10px;
+    display: flex;
 }
 
 nav a {
+    /*color: white;*/
     color: var(--accent_color2);
     display: block;
-    padding: 25px 20px 0px 20px;
-    /*
     padding: 20px;
     padding-bottom: 0;
-    */
 }
 
 p {
-    /*
-    padding-top: 10px;
-    padding-bottom: 10px;
-    */
     padding: 1px;
 }
 
@@ -155,8 +140,7 @@ figure {
     margin: 0;
 }
 
-figcaption{
-    font-size: 0.9rem;
+figcaption {
     text-align: center;
 }
 
@@ -180,6 +164,7 @@ div img {
     margin: 0 0 1rem 1rem;
 }
 
+
 /*-------------------------------------------------*/
 /* Class Selectors                                 */
 /*-------------------------------------------------*/
@@ -188,12 +173,12 @@ div img {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 10px;
-    width: 800px;
+    width: 700px;
 }
 
 .grid-item {
-    /* background-color: #1D5599; */
-    /* border: 1px solid black; */
+    background-color: #1D5599;
+    border: 1px solid black;
     padding: 10px;
     font-size: 1rem;
     text-align: center;
@@ -205,6 +190,13 @@ div img {
     text-align: justify;
 }
 
+/*
+.grid-photo1 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+*/
+
 .grid-text2 {
     grid-column-start: 2;
     grid-column-end: 4;
@@ -214,23 +206,19 @@ div img {
 .contact h1 {
     position: inherit;
     color: var(--back_color3);
-}
-
-.contact div img {
-    margin: 0 auto;
+    /*margin: 0 0 10px 15px;
+    padding: 3px;*/
 }
 
 .hero {
     position: relative;
 }
 
-/* about.html rafting image*/
 .hero img {
     width: 100%;
     height: auto;
 }
 
-/* ??? USED ??? */
 .logo img {
     position: relative;
     margin: 0 0 10px 15px;
@@ -244,13 +232,10 @@ div img {
 
 .sociallinks {
     position: relative;
-    /*
-    padding: 10px;
-    */
     border: 2px;
     padding-top: 3px;
     padding-bottom: 0;
-    display: 50%;
+    width: 50%;
     height: auto;
     background-color: var(--accent_color2);
 }
@@ -259,13 +244,7 @@ div img {
 .sociallinks img {
     width: 50px;
 }
-  
-/* sociallinks-img class to control size of social links images in footer */
-.social.wrapper img {
-    width: 10px;
-}
 
-/* This callout is attached to the about.html article */
 .callout {
     width: 80%;
     height: auto;
@@ -275,20 +254,16 @@ div img {
     /* To position inner box, use absolute */
     position: absolute;
     /* Callout location inside of large image */
-    top: 300px;
+    top: 100px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    text-align: center;
 }
 
 /* Image on right side of callout */
 .callout img {
     float: right;
-    margin: 0;
-    /*
     margin: 0 0 10px 15px;
-    */
     border: 1px solid var(--back_color1);
     padding: 3px;
     background-color: var(--back_color2);
@@ -297,20 +272,6 @@ div img {
 }
 
 /* adventure & adventure-img classs for Adventure Awaits <div> */
-.adventure {
-    display: flex;
-    justify-content: space-between;
-}
-
-.adventure img {
-    width: 150px;
-    height: auto;
-    border: 1px solid var(--back_color2);
-    padding: 2px;
-    box-shadow: 0 0 30px var(--back_color3);
-    margin: 0;  /* Overrides div img */
-}
-
 .team {
     display: flex;
     text-align: center;
@@ -336,6 +297,29 @@ div img {
     margin: .5rem 0;
 }
 
+/*
+.raft1txt {
+    grid-column: 1 / 4;
+    grid-template-columns: 4;
+    grid-row: 1;
+  }
+
+.raft1 {
+    grid-column: 4 / 4;
+    grid-row: 1;
+ }
+
+.raft2 {
+  grid-column: 1 / 4;
+  grid-row: 2;
+}
+
+.raft3 {
+  grid-column: 4 / 4;
+  grid-row: 3;
+}
+*/
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -343,52 +327,12 @@ div img {
     grid-auto-rows: minmax(50px, auto);
   }
 
-  table {
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    margin: 10px;
-  }
   
-  caption {
-    caption-side: bottom;
-    padding: 10px;
-    font-weight: bold;
-  }
-  
-  thead,
-  tfoot {
-    color: black;
-    background-color: rgb(228 240 245);
-  }
-  
-  th,
-  td {
-    border: 2px solid rgb(160 160 160);
-    padding: 8px 10px;
-    text-align: center;
-  }
-  
-  /*
-  td:last-of-type {
-    text-align: center;
-  }
-  */
-  
-  tbody > tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
-  }
-  
-  th {
-    text-align: center;
-  }
-  
-  td {
-    font-weight: normal;
-  }
-  
+/* sociallinks-img class to control size of social links images in footer */
+.social.wrapper img {
+    width: 10px;
+}
+
 /* Code found on https://blog.hubspot.com/website/remove-underline-from-links-css */
 a:link {
     text-decoration: none;
@@ -399,10 +343,11 @@ a:visited {
 } 
 
 a:hover {
-    color: var(--back_color2);
-    background-color: var(--accent_color1);
+    color: var(--back_color1); 
+    text-decoration: none; 
 } 
 
 a:active { 
     text-decoration: none; 
 }
+  
