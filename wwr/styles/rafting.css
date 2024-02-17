@@ -136,17 +136,9 @@ nav a {
     color: var(--accent_color2);
     display: block;
     padding: 25px 20px 0px 20px;
-    /*
-    padding: 20px;
-    padding-bottom: 0;
-    */
 }
 
 p {
-    /*
-    padding-top: 10px;
-    padding-bottom: 10px;
-    */
     padding: 1px;
 }
 
@@ -230,23 +222,8 @@ div img {
     height: auto;
 }
 
-/* ??? USED ??? */
-.logo img {
-    position: relative;
-    margin: 0 0 10px 15px;
-    border: 0;
-    padding: 3px;
-    /* Odd background color - Kim Daley */
-    /* background-color: transparent; */
-    width: 30px;
-    height: auto;
-}
-
 .sociallinks {
     position: relative;
-    /*
-    padding: 10px;
-    */
     border: 2px;
     padding-top: 3px;
     padding-bottom: 0;
@@ -286,9 +263,6 @@ div img {
 .callout img {
     float: right;
     margin: 0;
-    /*
-    margin: 0 0 10px 15px;
-    */
     border: 1px solid var(--back_color1);
     padding: 3px;
     background-color: var(--back_color2);
@@ -308,7 +282,7 @@ div img {
     border: 1px solid var(--back_color2);
     padding: 2px;
     box-shadow: 0 0 30px var(--back_color3);
-    margin: 0;  /* Overrides div img */
+    margin: 0;  /* IMPORTANT - Overrides div img */
 }
 
 .team {
@@ -335,13 +309,6 @@ div img {
     grid-template-columns: 20% 60%;
     margin: .5rem 0;
 }
-
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(50px, auto);
-  }
 
   table {
     border-collapse: collapse;
@@ -370,12 +337,6 @@ div img {
     padding: 8px 10px;
     text-align: center;
   }
-  
-  /*
-  td:last-of-type {
-    text-align: center;
-  }
-  */
   
   tbody > tr:nth-of-type(even) {
     background-color: rgb(237 238 242);
