@@ -227,7 +227,6 @@ div img {
     border: 2px;
     padding-top: 3px;
     padding-bottom: 0;
-    display: 50%;
     height: auto;
     background-color: var(--accent_color2);
 }
