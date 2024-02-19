@@ -212,22 +212,6 @@ div img {
     margin: 0 auto;
 }
 
-/* This callout is attached to the about.html article */
-.callout {
-    width: 80%;
-    height: auto;
-    padding: 15px;
-    color: var(--accent_color2);
-    background-color: var(--back_color2);
-    /* To position inner box, use absolute */
-    position: absolute;
-    /* Callout location inside of large image */
-    top: 300px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    text-align: center;
-}
 .hero {
     position: relative;
 }
@@ -277,7 +261,7 @@ div img {
 /* Image on right side of callout */
 .callout img {
     float: right;
-    margin: 0;
+    margin: 0rem;
     border: 1px solid var(--back_color1);
     padding: 3px;
     background-color: var(--back_color2);
@@ -325,7 +309,11 @@ div img {
     margin: .5rem 0;
 }
 
-  table {
+.email {
+    margin: .5rem 0;
+}
+
+table {
     border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
     font-family: sans-serif;
